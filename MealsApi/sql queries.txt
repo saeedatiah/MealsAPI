@@ -1,0 +1,94 @@
+/****************** DATABASE ******************/
+CREATE DATABASE MealsDB;
+
+/******************************************************/
+
+USE MealsDB;
+
+/******************  TABLE Categoris ******************/ 
+
+
+CREATE TABLE Categoris
+(
+  Id int NOT NULL IDENTITY(1,1),
+  Name VARCHAR(50) NOT NULL,
+  PRIMARY KEY (Id)
+);
+
+INSERT INTO Categoris 
+VALUES 
+	('بيتزا'),
+	('شاورما'),
+	('عصائر'),
+	('اكلات بحرية'),
+	('أكلات شرقية'),
+	('أكلات شعبية'),
+	('دجاج'),
+	('لحم')
+
+SELECT * FROM Categoris
+	
+/***************************************************/	
+
+/******************  TABLE Meals ******************/ 
+
+
+CREATE TABLE Meals
+(
+  Id int NOT NULL IDENTITY(1,1),
+  Name VARCHAR(50) NOT NULL,
+  Descr VARCHAR(150),
+  ImgURL VARCHAR(MAX),
+  Price float NOT NULL,
+  CatID int NOT NULL,
+  PRIMARY KEY (Id),
+  FOREIGN KEY (CatID) REFERENCES Categoris(Id)
+);
+
+create proc InsertMeal
+ (
+    @Name as VARCHAR(50),
+	@Descr as VARCHAR(150),
+	@ImgURL as VARCHAR(MAX),
+	@Price as float,
+	@CatID as int
+  )
+as
+begin
+Insert into Meals values (@Name,@Descr,@ImgURL,@Price,@CatID)
+end
+
+
+INSERT INTO Meals 
+VALUES 
+	('عصير ليمون','','D://',5,3),
+	('عصير برتقال','','D://',10,3),
+	('عصير جوافة','','D://',20,3),
+	('شاورما ','','D://',15,2),
+	('سلمون ','','D://',20,4),
+	('جمبري ','','D://',20,4),
+	('كافيار ','','D://',20,4),
+	('محار ','','D://',20,4),
+	('دجاج فحم ','','D://',20,7),
+	('دجاج شواية ','','D://',20,7)
+
+
+
+
+
+
+SELECT * FROM Meals
+
+SELECT M.Id, M.Name, M.Descr, M.ImgURL,M.Price,C.Name AS CatName FROM Meals AS M
+LEFT JOIN Categoris AS C
+ON M.CatID=C.Id
+
+
+
+
+
+
+
+
+	
+/***************************************************/	
