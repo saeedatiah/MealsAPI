@@ -27,6 +27,37 @@ VALUES
 	('لحم')
 
 SELECT * FROM Categoris
+
+create proc InsertCategory
+ (
+    @Name as VARCHAR(50)
+  )
+as
+begin
+Insert into Categoris values (@Name)
+end
+
+create proc UpdateCategory
+(
+	@Id as int,
+    @Name as VARCHAR(50)
+)
+as
+begin
+Update Categoris
+Set Name = @Name
+Where Id = @Id
+end
+
+create proc DeleteCategory
+(
+	@Id as int
+)
+as
+begin
+Delete from Categoris
+Where Id = @Id
+end
 	
 /***************************************************/	
 

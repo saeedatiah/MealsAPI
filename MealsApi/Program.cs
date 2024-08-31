@@ -1,4 +1,5 @@
 using MealsApi.Controllers;
+using MealsApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetSection("ConnectionStrings")["MealsApi_Db"].ToString();
@@ -15,6 +16,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 app.MapGet("/api/GetAllCategories", () => main.GetAllCategories());
+app.MapPost("/api/InsertCategory", (Category cat) => main.PostCategory(cat));
+app.MapPut("/api/UpdateCategory", (Category cat) => main.PutCategory(cat));
+app.MapDelete("/api/DeleteCategory", (int Id) => main.DeleteCategory(Id));
+
 
 
 // Configure the HTTP request pipeline.

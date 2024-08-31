@@ -13,8 +13,6 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -24,7 +22,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
->>>>>>> 069e05c57c32a4a0410185efc6ce3b365b9bdd31
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -38,8 +35,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
       "Microsoft.Win32.Registry/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -102,7 +97,6 @@
           }
         }
       },
->>>>>>> 069e05c57c32a4a0410185efc6ce3b365b9bdd31
       "Swashbuckle.AspNetCore/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -165,8 +159,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-<<<<<<< HEAD
-=======
       },
       "System.Data.SqlClient/4.8.6": {
         "type": "package",
@@ -241,7 +233,6 @@
             "rid": "win"
           }
         }
->>>>>>> 069e05c57c32a4a0410185efc6ce3b365b9bdd31
       }
     }
   },
@@ -477,8 +468,6 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
-<<<<<<< HEAD
-=======
     "Microsoft.NETCore.Platforms/3.1.0": {
       "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
@@ -496,7 +485,6 @@
         "version.txt"
       ]
     },
->>>>>>> 069e05c57c32a4a0410185efc6ce3b365b9bdd31
     "Microsoft.OpenApi/1.2.3": {
       "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "type": "package",
@@ -514,8 +502,6 @@
         "microsoft.openapi.nuspec"
       ]
     },
-<<<<<<< HEAD
-=======
     "Microsoft.Win32.Registry/4.7.0": {
       "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "type": "package",
@@ -626,7 +612,6 @@
         "version.txt"
       ]
     },
->>>>>>> 069e05c57c32a4a0410185efc6ce3b365b9bdd31
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -716,8 +701,6 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
-<<<<<<< HEAD
-=======
     },
     "System.Data.SqlClient/4.8.6": {
       "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
@@ -904,7 +887,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
->>>>>>> 069e05c57c32a4a0410185efc6ce3b365b9bdd31
     }
   },
   "projectFileDependencyGroups": {
@@ -914,26 +896,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Users\\alkiser\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj",
+      "projectUniqueName": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj",
       "projectName": "MealsApi",
-      "projectPath": "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\dotnet\\MealsAPI\\MealsApi\\obj\\",
+      "projectPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj",
+      "packagesPath": "C:\\Users\\alkiser\\.nuget\\packages\\",
+      "outputPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\alkiser\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -942,7 +921,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
