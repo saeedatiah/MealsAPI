@@ -1,4 +1,7 @@
-﻿namespace MealsApi.Models
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace MealsApi.Models
 {
     public class Category
     {
