@@ -896,26 +896,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Users\\alkiser\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj",
+      "projectUniqueName": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj",
       "projectName": "MealsApi",
-      "projectPath": "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\dotnet\\MealsAPI\\MealsApi\\obj\\",
+      "projectPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj",
+      "packagesPath": "C:\\Users\\alkiser\\.nuget\\packages\\",
+      "outputPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\alkiser\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -924,7 +921,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },

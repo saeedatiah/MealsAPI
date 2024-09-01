@@ -26,6 +26,18 @@ VALUES
 	('دجاج'),
 	('لحم')
 
+create proc InsertCategoryWithReturn
+ (
+    @Name as VARCHAR(50)
+  )
+as
+begin
+INSERT INTO Categoris 
+VALUES (@Name)
+DECLARE @Id INT = SCOPE_IDENTITY();
+SELECT * FROM Categoris WHERE Id = @Id
+end
+
 SELECT * FROM Categoris
 
 create proc InsertCategory

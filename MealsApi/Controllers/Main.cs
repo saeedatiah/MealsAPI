@@ -20,7 +20,7 @@ namespace MealsApi.Controllers
         //    categoryController.GetAll(GeneralQuery.selectAllRecords("Categoris"), _connectionString);
 
         public async Task<ResponseModel<int>> PostCategory(Category newCat)=>
-            await Task.FromResult(categoryController.Post(newCat, GeneralData.InsertCategoryProc, _connectionString));
+            await Task.FromResult(categoryController.Post(newCat, GeneralData.InsertCategoryWithReturnProc, _connectionString));
 
         public async Task<ResponseModel<int>> PutCategory(Category newCat) =>
             await Task.FromResult(categoryController.Put(newCat, GeneralData.UpdateCategoryProc, _connectionString));
