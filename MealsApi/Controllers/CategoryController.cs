@@ -33,11 +33,11 @@ namespace MealsApi.Controllers
                     res.message= "OK";
                     return res;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     res.data = null;
                     res.code = 500;
-                    res.message= "server error";
+                    res.message= ex.Message;
                     return res;
 
                 }
@@ -53,6 +53,9 @@ namespace MealsApi.Controllers
             {
                 try
                 {
+
+                    var a= typeof(Category).GetProperties().Count();
+                    var b= typeof(Category).GetProperties();
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(procName, conn);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -60,6 +63,7 @@ namespace MealsApi.Controllers
                     cmd.Parameters.AddWithValue("@Name", newCat.Name);
 
                     SqlDataReader reader = cmd.ExecuteReader();
+                    var aaa = cmd.ExecuteScalar();
 
                     res.message = "Add Successfully";
                     res.code = 200;
@@ -68,7 +72,7 @@ namespace MealsApi.Controllers
                 }
                 catch (Exception ex)
                 {
-                    res.message = "Server Error";
+                    res.message = ex.Message;
                     res.code = 500;
                     if (ex is SqlException sqlException)
                     {
@@ -103,7 +107,7 @@ namespace MealsApi.Controllers
                 }
                 catch (Exception ex)
                 {
-                    res.message = "Server Error";
+                    res.message = ex.Message;
                     res.code = 500;
                     if (ex is SqlException sqlException)
                     {
@@ -120,36 +124,68 @@ namespace MealsApi.Controllers
         public ResponseModel<int> Delete(int Id, string procName, string connectionString)
         {
             ResponseModel<int> res = new ResponseModel<int>();
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand(procName, conn);
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Id",Id);
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Categoris WHERE Id=@Id", conn);
+                    cmd.Parameters.AddWithValue("@Id", Id);
+                    int count= cmd.ExecuteNonQuery();
+                    if (count > 0) 
+                    {
+                        res.message = "Delete Successfully";
+                        res.code = 200;
+                    }
+                    else
+                    {
+                        res.message = "Not Found";
+                        res.code = 404;
 
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    res.message = "Delete Successfully";
-                    res.code = 200;
-
-                    reader.Close();
+                    }
                 }
                 catch (Exception ex)
                 {
-                    res.message = "Server Error";
+                    res.message = ex.Message;
                     res.code = 500;
-                    if (ex is SqlException sqlException)
-                    {
-                        //sqlException.InnerException.InnerException is U
-                    }
-                    throw;
                 }
+
+            }
+
+
+            //ResponseModel<int> res = new ResponseModel<int>();
+
+            //using (SqlConnection conn = new SqlConnection(connectionString))
+            //{
+            //    try
+            //    {
+            //        conn.Open();
+            //        SqlCommand cmd = new SqlCommand(procName, conn);
+            //        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            //        cmd.Parameters.AddWithValue("@Id",Id);
+
+            //        SqlDataReader reader = cmd.ExecuteReader();
+            //        res.message = "Delete Successfully";
+            //        res.code = 200;
+
+            //        reader.Close();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        res.message = "Server Error";
+            //        res.code = 500;
+            //        if (ex is SqlException sqlException)
+            //        {
+            //            //sqlException.InnerException.InnerException is U
+            //        }
+            //        throw;
+            //    }
 
 
                 return res;
             }
         }
 
-    }
+    
 }

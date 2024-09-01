@@ -58,6 +58,19 @@ begin
 Delete from Categoris
 Where Id = @Id
 end
+
+Create Proc InsertCategoryWithReturn
+    @Name as VARCHAR(50),
+    @IdOut int OUTPUT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO Categoris
+    VALUES (@Name)
+
+    SELECT @IdOut = SCOPE_IDENTITY()
+END
 	
 /***************************************************/	
 
