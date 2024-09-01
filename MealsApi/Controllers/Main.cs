@@ -1,5 +1,6 @@
 ﻿using MealsApi.Models;
 using MealsApi.Services;
+using MealsApi.ViewModel;
 
 namespace MealsApi.Controllers
 {
@@ -7,14 +8,15 @@ namespace MealsApi.Controllers
     {
         private readonly string _connectionString;
         CategoryController categoryController = new CategoryController();
+        MealController mealController = new MealController();
 
         public Main(string connectionString)
         {
             _connectionString = connectionString;
         }
-
+        //categories
         public ResponseModel<List<Category>> GetAllCategories() =>
-            categoryController.GetAll(GeneralQuery.selectAllRecords("Categoris"), _connectionString);
+            BaseController<Category>.GetAll(GeneralQuery.selectAllRecords("Categoris"), _connectionString);
 
         //public ResponseModel<int> PostCategories() =>
         //    categoryController.GetAll(GeneralQuery.selectAllRecords("Categoris"), _connectionString);
@@ -27,6 +29,13 @@ namespace MealsApi.Controllers
 
         public async Task<ResponseModel<int>> DeleteCategory(int Id) =>
             await Task.FromResult(categoryController.Delete(Id, GeneralData.DeleteCategoryProc, _connectionString));
+
+
+        //Meals
+
+        public ResponseModel<List<MealView>> GetAllMeals() =>
+            BaseController<MealView>.GetAll("GetAllMeals", _connectionString,true);
+
 
     }
 }

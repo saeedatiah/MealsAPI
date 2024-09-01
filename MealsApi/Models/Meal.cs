@@ -2,7 +2,7 @@
 
 namespace MealsApi.Models
 {
-    public class Meals
+    public class Meal
     {
         [Required]
         public int Id { get; set; }

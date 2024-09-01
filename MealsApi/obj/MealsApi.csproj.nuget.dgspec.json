@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj": {}
+    "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj": {}
   },
   "projects": {
-    "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj": {
+    "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj",
+        "projectUniqueName": "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj",
         "projectName": "MealsApi",
-        "projectPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\MealsApi.csproj",
-        "packagesPath": "C:\\Users\\alkiser\\.nuget\\packages\\",
-        "outputPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\obj\\",
+        "projectPath": "D:\\dotnet\\MealsAPI\\MealsApi\\MealsApi.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\dotnet\\MealsAPI\\MealsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alkiser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +28,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -50,6 +53,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FastMember": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
