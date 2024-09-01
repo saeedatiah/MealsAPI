@@ -109,3 +109,4 @@ D:\Apps\Backend\dotnet\MealsApi\MealsApi\obj\Debug\net6.0\MealsApi.csproj.Up2Dat
 D:\Apps\Backend\dotnet\MealsApi\MealsApi\obj\Debug\net6.0\MealsApi.genruntimeconfig.cache
 D:\Apps\Backend\dotnet\MealsApi\MealsApi\obj\Debug\net6.0\ref\MealsApi.dll
 D:\dotnet\MealsAPI\MealsApi\bin\Debug\net6.0\FastMember.dll
+D:\Apps\Backend\dotnet\MealsApi\MealsApi\bin\Debug\net6.0\FastMember.dll

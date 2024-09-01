@@ -75,7 +75,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MealsApi.Services.ResponseModel\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "MealsApi.Services.ResponseModel\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],

@@ -21,8 +21,12 @@ namespace MealsApi.Controllers
         //public ResponseModel<int> PostCategories() =>
         //    categoryController.GetAll(GeneralQuery.selectAllRecords("Categoris"), _connectionString);
 
-        public async Task<ResponseModel<int>> PostCategory(Category newCat)=>
-            await Task.FromResult(categoryController.Post(newCat, GeneralData.InsertCategoryWithReturnProc, _connectionString));
+        //public async Task<ResponseModel<int>> PostCategory(Category newCat)=>
+        //    await Task.FromResult(categoryController.Post(newCat, GeneralData.InsertCategoryWithReturnProc, _connectionString));
+
+        public async Task<ResponseModel<Category>> PostCategory(Category newCat) =>
+            await Task.FromResult(BaseController<Category>.Post(newCat, GeneralData.InsertCategoryWithReturnProc, _connectionString));
+
 
         public async Task<ResponseModel<int>> PutCategory(Category newCat) =>
             await Task.FromResult(categoryController.Put(newCat, GeneralData.UpdateCategoryProc, _connectionString));
@@ -34,7 +38,7 @@ namespace MealsApi.Controllers
         //Meals
 
         public ResponseModel<List<MealView>> GetAllMeals() =>
-            BaseController<MealView>.GetAll("GetAllMeals", _connectionString,true);
+            BaseController<MealView>.GetAll(GeneralData.GetAllMealsVMProc, _connectionString,true);
 
 
     }
