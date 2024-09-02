@@ -25,13 +25,17 @@ namespace MealsApi.Controllers
 
                         foreach (var prop in typeof(T).GetProperties())
                         {
+                            var nameProp = prop.Name;
                             if(prop.PropertyType.Name=="Int32")
                             {
-                                item.Id = Convert.ToInt32(reader[prop.Name]);
+                                //item.nameProp = Convert.ToInt32(reader[prop.Name]);
+                                ((IDictionary<string, object>)item)[prop.Name] = Convert.ToInt32(reader[prop.Name]);
+                                var aaaa = item;
+
                             }
                             else if(prop.PropertyType.Name == "String")
                             {
-                                item.Name = Convert.ToString(reader[prop.Name]);
+                                item.nameProp = Convert.ToString(reader[prop.Name]);
                             }
                         }
 
