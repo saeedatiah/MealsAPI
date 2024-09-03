@@ -1,53 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Apps\\Backend\\dotnet\\MealsApi\\",
+  "WorkspaceRootPath": "D:\\dotnet\\MealsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\controllers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\controllers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\controllers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\services\\generalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\services\\generalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\services\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\services\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\services\\generaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\services\\generaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\services\\generaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\sql queries.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\sql queries.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\controllers\\mealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\controllers\\mealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\models\\meal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\models\\meal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\services\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\services\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\services\\generalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\services\\generalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\viewmodel\\mealview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\viewmodel\\mealview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\sql queries.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\sql queries.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\services\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\services\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\models\\meals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\models\\meals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\apps\\backend\\dotnet\\mealsapi\\mealsapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|d:\\dotnet\\mealsapi\\mealsapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D23F542-881D-4F8D-9360-ACB66A2B71A1}|MealsApi\\MealsApi.csproj|solutionrelative:mealsapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,30 +70,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "MealsApi\\Controllers\\BaseController.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\BaseController.cs*",
-              "RelativeToolTip": "MealsApi\\Controllers\\BaseController.cs*",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAawCgAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\Main.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Controllers\\Main.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\Main.cs",
+              "RelativeToolTip": "MealsApi\\Controllers\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T17:03:02.509Z",
+              "WhenOpened": "2024-08-31T16:32:14.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\appsettings.json",
+              "RelativeDocumentMoniker": "MealsApi\\appsettings.json",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\appsettings.json",
+              "RelativeToolTip": "MealsApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-27T15:59:59.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Program.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Program.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Program.cs",
+              "RelativeToolTip": "MealsApi\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:54:52.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GeneralData.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\GeneralData.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Services\\GeneralData.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\GeneralData.cs",
+              "RelativeToolTip": "MealsApi\\Services\\GeneralData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T18:14:52.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Meal.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Models\\Meal.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Models\\Meal.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Models\\Meal.cs",
+              "RelativeToolTip": "MealsApi\\Models\\Meal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T11:19:54.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\CategoryController.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "MealsApi\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "MealsApi\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-31T17:07:14.264Z",
               "EditorCaption": ""
@@ -89,23 +156,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "sql queries.txt",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\sql queries.txt",
-              "RelativeDocumentMoniker": "MealsApi\\sql queries.txt",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\sql queries.txt",
-              "RelativeToolTip": "MealsApi\\sql queries.txt",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-31T17:52:56.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ResponseModel.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Services\\ResponseModel.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\ResponseModel.cs",
               "RelativeDocumentMoniker": "MealsApi\\Services\\ResponseModel.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Services\\ResponseModel.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\ResponseModel.cs",
               "RelativeToolTip": "MealsApi\\Services\\ResponseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,76 +168,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\Main.cs",
-              "RelativeDocumentMoniker": "MealsApi\\Controllers\\Main.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\Main.cs",
-              "RelativeToolTip": "MealsApi\\Controllers\\Main.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAIAwwBAAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MealController.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\MealController.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Controllers\\MealController.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\MealController.cs",
+              "RelativeToolTip": "MealsApi\\Controllers\\MealController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:32:14.254Z",
+              "WhenOpened": "2024-09-03T08:23:52.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "MealsApi\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T17:03:02.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "GeneralQuery.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Services\\GeneralQuery.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\GeneralQuery.cs",
               "RelativeDocumentMoniker": "MealsApi\\Services\\GeneralQuery.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Services\\GeneralQuery.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\GeneralQuery.cs",
               "RelativeToolTip": "MealsApi\\Services\\GeneralQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T14:48:51.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\appsettings.json",
-              "RelativeDocumentMoniker": "MealsApi\\appsettings.json",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\appsettings.json",
-              "RelativeToolTip": "MealsApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-27T15:59:59.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Program.cs",
-              "RelativeDocumentMoniker": "MealsApi\\Program.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Program.cs",
-              "RelativeToolTip": "MealsApi\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBEAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T15:54:52.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GeneralData.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Services\\GeneralData.cs",
-              "RelativeDocumentMoniker": "MealsApi\\Services\\GeneralData.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Services\\GeneralData.cs",
-              "RelativeToolTip": "MealsApi\\Services\\GeneralData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T18:14:52.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "MealView.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\ViewModel\\MealView.cs",
+              "RelativeDocumentMoniker": "MealsApi\\ViewModel\\MealView.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\ViewModel\\MealView.cs",
+              "RelativeToolTip": "MealsApi\\ViewModel\\MealView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T10:33:42.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "sql queries.txt",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\sql queries.txt",
+              "RelativeDocumentMoniker": "MealsApi\\sql queries.txt",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\sql queries.txt",
+              "RelativeToolTip": "MealsApi\\sql queries.txt",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAI0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-03T10:26:58.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\Helper.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Services\\Helper.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Services\\Helper.cs",
+              "RelativeToolTip": "MealsApi\\Services\\Helper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwB8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T07:51:44.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "MealsApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "MealsApi\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,23 +258,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Meals.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Models\\Meals.cs",
-              "RelativeDocumentMoniker": "MealsApi\\Models\\Meals.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Models\\Meals.cs",
-              "RelativeToolTip": "MealsApi\\Models\\Meals.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T11:19:54.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Models\\Category.cs",
+              "DocumentMoniker": "D:\\dotnet\\MealsAPI\\MealsApi\\Models\\Category.cs",
               "RelativeDocumentMoniker": "MealsApi\\Models\\Category.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Models\\Category.cs",
+              "ToolTip": "D:\\dotnet\\MealsAPI\\MealsApi\\Models\\Category.cs",
               "RelativeToolTip": "MealsApi\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

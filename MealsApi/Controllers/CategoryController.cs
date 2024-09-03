@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace MealsApi.Controllers
 {
-    public class CategoryController : BaseController<Category>
+    public class CategoryController 
     {
 
         //public ResponseModel<List<Category>> GetAll(string sqlQuery, string connectionString)

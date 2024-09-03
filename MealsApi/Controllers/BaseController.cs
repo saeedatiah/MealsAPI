@@ -2,12 +2,13 @@
 using MealsApi.Services;
 using System.Collections.ObjectModel;
 using System.Data.SqlClient;
+using System.Reflection;
 
 namespace MealsApi.Controllers
 {
-    public class BaseController<T> 
+    public static class BaseController<T> where T : new()
     {
-        public  ResponseModel<List<T>> GetAll(string sqlProc, string connectionString)
+        public static ResponseModel<List<T>> GetAll(string sqlQuery, string connectionString ,bool isProc=false)
         {
             List<T> items = new List<T>();
             ResponseModel<List<T>> res = new ResponseModel<List<T>>();
@@ -17,32 +18,25 @@ namespace MealsApi.Controllers
                 try
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand(sqlProc, conn);
+                    SqlCommand cmd = new SqlCommand(sqlQuery, conn);
                     SqlDataReader reader = cmd.ExecuteReader();
+                    if(isProc)
+                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     while (reader.Read())
                     {
-                        dynamic item = new System.Dynamic.ExpandoObject(); 
-
-                        foreach (var prop in typeof(T).GetProperties())
+                        T t = new T();
+                        for (int i = 0; i < reader.FieldCount; i++)
                         {
-                            var nameProp = prop.Name;
-                            if(prop.PropertyType.Name=="Int32")
+                            Type type = t.GetType();
+                            PropertyInfo prop = type.GetProperty(reader.GetName(i));
+                            if (prop.PropertyType.Name == "Single")
                             {
-                                //item.nameProp = Convert.ToInt32(reader[prop.Name]);
-                                ((IDictionary<string, object>)item)[prop.Name] = Convert.ToInt32(reader[prop.Name]);
-                                var aaaa = item;
-
+                                prop.SetValue(t, float.Parse(reader.GetValue(i).ToString()), null);
                             }
-                            else if(prop.PropertyType.Name == "String")
-                            {
-                                item.nameProp = Convert.ToString(reader[prop.Name]);
-                            }
+                            else
+                                prop.SetValue(t, reader.GetValue(i), null);
                         }
-
-                        T finalItem = item;
-                        //cat.Id = Convert.ToInt32(reader["Id"]);
-                        //cat.Name = Convert.ToString(reader["Name"]);
-                        items.Add(item);
+                        items.Add(t);
                     }
                     reader.Close();
                     res.data = items;
@@ -57,9 +51,6 @@ namespace MealsApi.Controllers
                     res.message = ex.Message;
                     return res;
                 }
-
-
-
             }
         }
 

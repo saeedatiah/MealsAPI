@@ -139,6 +139,14 @@ SELECT M.Id, M.Name, M.Descr, M.ImgURL,M.Price,C.Name AS CatName FROM Meals AS M
 LEFT JOIN Categoris AS C
 ON M.CatID=C.Id
 
+Create Proc GetAllMeals
+AS
+BEGIN
+    SELECT M.Id, M.Name, M.Descr, M.ImgURL,M.Price,C.Id As CatID, C.Name AS CatName FROM Meals AS M
+LEFT JOIN Categoris AS C
+ON M.CatID=C.Id
+END
+
 
 
 

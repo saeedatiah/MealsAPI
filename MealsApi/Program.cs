@@ -21,6 +21,10 @@ app.MapPut("/api/UpdateCategory", (Category cat) => main.PutCategory(cat));
 app.MapDelete("/api/DeleteCategory", (int Id) => main.DeleteCategory(Id));
 
 
+app.MapGet("/api/GetAllMeals", () => main.GetAllMeals());
+
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
