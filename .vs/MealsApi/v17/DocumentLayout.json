@@ -57,8 +57,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "MealsApi\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "MealsApi\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAawEIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T17:03:02.509Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -72,19 +85,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "MealsApi\\Controllers\\BaseController.cs",
-              "ToolTip": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\BaseController.cs*",
-              "RelativeToolTip": "MealsApi\\Controllers\\BaseController.cs*",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAawEgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T17:03:02.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\Apps\\Backend\\dotnet\\MealsApi\\MealsApi\\Controllers\\Main.cs",
@@ -93,8 +93,7 @@
               "RelativeToolTip": "MealsApi\\Controllers\\Main.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAD4vxoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:32:14.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T16:32:14.254Z"
             },
             {
               "$type": "Document",
@@ -106,8 +105,7 @@
               "RelativeToolTip": "MealsApi\\Services\\GeneralQuery.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T14:48:51.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T14:48:51.033Z"
             },
             {
               "$type": "Document",
@@ -119,8 +117,7 @@
               "RelativeToolTip": "MealsApi\\Services\\GeneralData.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAcwAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T18:14:52.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T18:14:52.796Z"
             },
             {
               "$type": "Document",
@@ -132,8 +129,7 @@
               "RelativeToolTip": "MealsApi\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T17:07:14.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T17:07:14.264Z"
             },
             {
               "$type": "Document",
@@ -145,8 +141,7 @@
               "RelativeToolTip": "MealsApi\\Program.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwBIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T15:54:52.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T15:54:52.809Z"
             },
             {
               "$type": "Document",
@@ -158,8 +153,7 @@
               "RelativeToolTip": "MealsApi\\sql queries.txt",
               "ViewState": "AgIAAIQAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-31T17:52:56.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T17:52:56.109Z"
             },
             {
               "$type": "Document",
