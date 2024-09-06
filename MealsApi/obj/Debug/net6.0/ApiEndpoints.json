@@ -51,7 +51,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "MealsApi.Services.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[MealsApi.ViewModel.MealView, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "MealsApi.Utility.Response\u00601[[System.Collections.Generic.List\u00601[[MealsApi.ViewModel.MealVM, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -76,6 +76,30 @@
     "ReturnTypes": [
       {
         "Type": "MealsApi.Services.ResponseModel\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__5",
+    "RelativePath": "api/PostMeal",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Meal",
+        "Type": "MealsApi.Models.Meal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
         "MediaTypes": [
           "application/json"
         ],

@@ -150,7 +150,9 @@ END
 
 
 
-
+INSERT INTO Meals  (Name,Descr,ImgURL,Price,CatID) 
+	OUTPUT Inserted.Id
+values ('stringg','stringg','stringg',2.5,2) 
 
 
 

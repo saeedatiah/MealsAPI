@@ -8,7 +8,7 @@ namespace MealsApi.Controllers
     {
         private readonly string _connectionString;
         CategoryController categoryController = new CategoryController();
-        MealController mealController = new MealController();
+        //MealController mealController = new MealController();
 
         public Main(string connectionString)
         {
@@ -37,8 +37,8 @@ namespace MealsApi.Controllers
 
         //Meals
 
-        public ResponseModel<List<MealView>> GetAllMeals() =>
-            BaseController<MealView>.GetAll(GeneralData.GetAllMealsVMProc, _connectionString,true);
+        //public ResponseModel<List<MealView>> GetAllMeals() =>
+        //    BaseController<MealView>.GetAll(GeneralData.GetAllMealsVMProc, _connectionString,true);
 
 
     }

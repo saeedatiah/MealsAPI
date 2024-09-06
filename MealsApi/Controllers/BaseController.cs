@@ -9,6 +9,8 @@ namespace MealsApi.Controllers
 {
     public static class BaseController<T> where T : new()
     {
+
+
         public static ResponseModel<List<T>> GetAll(string queryOrProc, string connectionString ,bool isProc=false)
         {
             List<T> items = new List<T>();

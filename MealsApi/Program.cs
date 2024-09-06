@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetSection("ConnectionStrings")["MealsApi_Db"].ToString();
 
 Main main = new Main(connectionString);
+MealController mealController = new MealController(connectionString);
+
 
 
 // Add services to the container.
@@ -21,7 +23,10 @@ app.MapPut("/api/UpdateCategory", (Category cat) => main.PutCategory(cat));
 app.MapDelete("/api/DeleteCategory", (int Id) => main.DeleteCategory(Id));
 
 
-app.MapGet("/api/GetAllMeals", () => main.GetAllMeals());
+app.MapGet("/api/GetAllMeals", () => mealController.GetAllMeals());
+app.MapPost("/api/PostMeal", (Meal meal) => mealController.SaveMeal(meal));
+
+//app.MapPost("/api/PostMeal", () => mealController.SaveMeal());
 
 
 
