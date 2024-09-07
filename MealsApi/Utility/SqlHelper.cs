@@ -4,10 +4,9 @@ namespace MealsApi.Utility
 {
     public static class SqlHelper
     {
-        public static string ExecuteProcedureReturnString(string connString, string procName,
+        public static void ExecuteProcedure(string connString, string procName,
             params SqlParameter[] paramters)
         {
-            string result = "";
             using (var sqlConnection = new SqlConnection(connString))
             {
                 using (var command = sqlConnection.CreateCommand())
@@ -19,12 +18,9 @@ namespace MealsApi.Utility
                         command.Parameters.AddRange(paramters);
                     }
                     sqlConnection.Open();
-                    var ret = command.ExecuteScalar();
-                    if (ret != null)
-                        result = Convert.ToString(ret);
+                    command.ExecuteScalar();
                 }
             }
-            return result;
         }
 
         public static TData ExtecuteProcedureOrQueryReturnData<TData>(string connString, string procNameOrSqlQuery,
@@ -60,7 +56,6 @@ namespace MealsApi.Utility
                 }
             }
         }
-
 
         #region Get Values from Sql Data Reader
         public static string GetNullableString(SqlDataReader reader, string colName)

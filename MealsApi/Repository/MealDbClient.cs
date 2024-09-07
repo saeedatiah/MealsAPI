@@ -15,56 +15,51 @@ namespace MealsApi.Repository
                 "GetAllMeals", r => r.TranslateAsMealsList());
         }
 
-        public string SaveMeal(Meal model, string connString)
+        public MealVM SaveMeal(Meal model, string connString, bool isEdit)
         {
-           
-            //var outParam1 = new SqlParameter("@Id", SqlDbType.Int)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
-            //var outParam2 = new SqlParameter("@Name", SqlDbType.VarChar,50)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
-            //var outParam3 = new SqlParameter("@Descr", SqlDbType.VarChar, 150)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
-            //var outParam4 = new SqlParameter("@ImgURL", SqlDbType.VarChar,-1)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
-            //var outParam5 = new SqlParameter("@Price", SqlDbType.Float)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
-            //var outParam6 = new SqlParameter("@CatID", SqlDbType.Int)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
-            //var outParam7 = new SqlParameter("@CatName", SqlDbType.VarChar,50)
-            //{
-            //    Direction = ParameterDirection.Output
-            //};
+            SqlParameter Idreturn;
+            if (!isEdit)
+            {
+                Idreturn = new SqlParameter("@new_id", SqlDbType.Int);
+                Idreturn.Direction = ParameterDirection.Output;
+            }
+            else
+                Idreturn = new SqlParameter("@Id", model.Id);
+
+            SqlParameter catNameReturn = new SqlParameter("@catName", SqlDbType.VarChar, 50);
+            catNameReturn.Direction = ParameterDirection.Output;
 
             SqlParameter[] param = {
-                //new SqlParameter("@Id",model.Id),
+                Idreturn,
                 new SqlParameter("@Name",model.Name),
                 new SqlParameter("@Descr",model.Descr),
                 new SqlParameter("@ImgURL",model.ImgURL),
                 new SqlParameter("@Price",model.Price),
                 new SqlParameter("@CatID",model.CatID),
-                //outParam1,
-                //outParam2,
-                //outParam3,
-                //outParam4,
-                //outParam5,
-                //outParam6,
-                //outParam7,
+                catNameReturn
             };
-            SqlHelper.ExecuteProcedureReturnString(connString, "InsertMeal", param);
-            return "";
-            //return (string)outParam.Value;
+            SqlHelper.ExecuteProcedure(connString, isEdit ? "UpdateMeal" : "InsertMeal", param);
+
+            return new MealVM()
+            {
+                Id = isEdit ? model.Id : int.Parse(Idreturn.Value.ToString()),
+                Name = model.Name,
+                Descr = model.Descr,
+                ImgURL = model.ImgURL,
+                Price = model.Price,
+                CatID = model.CatID,
+                CatName = catNameReturn.Value.ToString()
+            };
         }
+
+        public void DeleteMeal(int Id, string connString)
+        {
+
+            SqlParameter[] param = {
+                new SqlParameter("@Id",Id)
+            };
+            SqlHelper.ExecuteProcedure(connString, "DeleteMeal", param);
+        }
+
     }
 }

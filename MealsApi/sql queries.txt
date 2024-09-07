@@ -83,6 +83,45 @@ BEGIN
 
     SELECT @IdOut = SCOPE_IDENTITY()
 END
+
+
+
+
+create Proc InsertCategory
+    @new_id int output,
+	@Name varchar(50) 
+AS
+BEGIN
+	INSERT INTO Categoris(Name) 
+	values (@Name)
+	set @new_id=SCOPE_IDENTITY()
+	RETURN
+END
+
+
+Create Proc GetAllCategories
+AS
+BEGIN
+    SELECT Id,Name FROM Categoris 
+END
+
+
+create Proc UpdateCategory
+    @Id int ,
+	@Name varchar(50) 
+AS
+BEGIN
+	update Categoris set Name=@Name
+	where Id=@Id
+END
+
+
+create Proc DeleteCategory
+    @Id int 
+AS
+BEGIN
+	Delete from Categoris where Id=@Id;
+END
 	
 /***************************************************/	
 
@@ -154,6 +193,59 @@ INSERT INTO Meals  (Name,Descr,ImgURL,Price,CatID)
 	OUTPUT Inserted.Id
 values ('stringg','stringg','stringg',2.5,2) 
 
+
+
+
+create Proc InsertMeal
+    @new_id int output,
+	@Name varchar(50) ,
+	@Descr varchar(150) ,
+	@ImgURL varchar(max) ,
+	@Price float ,
+	@CatID int,
+    @catName varchar(50) output
+    
+AS
+BEGIN
+    
+	INSERT INTO Meals  (Name,Descr,ImgURL,Price,CatID) 
+	values (@Name,@Descr,@ImgURL,@Price,@CatID)
+
+	set @new_id=SCOPE_IDENTITY()
+	declare @ret varchar(50) =(select (Name) from Categoris where Id=@catId) 
+	set @catName = @ret
+	RETURN
+    
+END
+
+
+create Proc UpdateMeal
+    @Id int ,
+	@Name varchar(50) ,
+	@Descr varchar(150) ,
+	@ImgURL varchar(max) ,
+	@Price float ,
+	@CatID int,
+    @catName varchar(50) output
+    
+AS
+BEGIN
+    
+	update Meals set Name=@Name,Descr=@Descr,ImgURL=@ImgURL,Price=@Price,CatID=@CatID
+	where Id=@Id
+
+	declare @ret varchar(50) =(select (Name) from Categoris where Id=@catId) 
+	set @catName = @ret
+	RETURN
+    
+END
+
+create Proc DeleteMeal
+    @Id int 
+AS
+BEGIN
+	Delete from Meals where Id=@Id;
+END
 
 
 	

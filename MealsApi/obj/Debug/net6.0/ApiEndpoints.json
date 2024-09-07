@@ -15,7 +15,31 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MealsApi.Services.ResponseModel\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "MealsApi.Utility.Response\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__7",
+    "RelativePath": "api/DeleteMeal",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MealsApi.Utility.Response\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -33,7 +57,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "MealsApi.Services.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "MealsApi.Utility.Response\u00601[[System.Collections.Generic.List\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -62,7 +86,7 @@
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__1",
-    "RelativePath": "api/InsertCategory",
+    "RelativePath": "api/PostCategory",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
@@ -75,7 +99,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MealsApi.Services.ResponseModel\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "MealsApi.Utility.Response\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -99,7 +123,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Microsoft.AspNetCore.Mvc.IActionResult",
+        "Type": "MealsApi.Utility.Response\u00601[[MealsApi.ViewModel.MealVM, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -110,7 +134,7 @@
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__2",
-    "RelativePath": "api/UpdateCategory",
+    "RelativePath": "api/PutCategory",
     "HttpMethod": "PUT",
     "IsController": false,
     "Order": 0,
@@ -123,7 +147,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MealsApi.Services.ResponseModel\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "MealsApi.Utility.Response\u00601[[MealsApi.Models.Category, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -132,24 +156,27 @@
     ]
   },
   {
-    "ContainingType": "MealsApi.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
+    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__6",
+    "RelativePath": "api/PutMeal",
+    "HttpMethod": "PUT",
+    "IsController": false,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Meal",
+        "Type": "MealsApi.Models.Meal",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MealsApi.WeatherForecast, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "MealsApi.Utility.Response\u00601[[MealsApi.ViewModel.MealVM, MealsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    ]
   }
 ]

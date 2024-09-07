@@ -1,166 +1,69 @@
 ﻿using MealsApi.Models;
+using MealsApi.Repository;
 using MealsApi.Services;
+using MealsApi.Utility;
+using MealsApi.ViewModel;
+using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;
 
 
 namespace MealsApi.Controllers
 {
-    public class CategoryController 
+    public class CategoryController : Controller
     {
-        public ResponseModel<int> Post(Category newCat, string procName, string connectionString)
+        private readonly string _connectionString;
+
+        public CategoryController(string connectionString)
         {
-            ResponseModel<int> res=new ResponseModel<int>();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            _connectionString = connectionString;
+        }
+
+        public Response<List<Category>> GetAllCategoriess()
+        {
+            try
             {
-                try
-                {
-                    SqlCommand cmd = new SqlCommand(procName, conn);
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    foreach (var item in typeof(Category).GetProperties())
-                    {
-                        if (!(item.Name == "Id" || item.Name == "ID" || item.Name == "id"))
-                        {
-                            cmd.Parameters.AddWithValue("@"+ item.Name+ "", newCat.Name);
-
-                        }
-                    }
-                     
-                    var a= typeof(Category).GetProperties().Count();
-                    var b= typeof(Category).GetProperties();
-
-                    conn.Open();
-
-                    //SqlCommand cmd = new SqlCommand(procName, conn);
-
-                    //cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    //cmd.Parameters.AddWithValue("@Id", newCat.Id);
-                    cmd.Parameters.AddWithValue("@Name", newCat.Name);
-
-                    //SqlDataReader reader = cmd.ExecuteReader();
-                    var aaa = cmd.ExecuteScalar();
-
-                    res.message = "Add Successfully";
-                    res.code = 200;
-                    
-                    //reader.Close();
-                }
-                catch (Exception ex)
-                {
-                    res.message = ex.Message;
-                    res.code = 500;
-                    if (ex is SqlException sqlException)
-                    {
-                        //sqlException.InnerException.InnerException is U
-                    }
-                    throw;
-                }
-
-
-                return  res;
+                List<Category> data = DbClientFactory<CategoryDbClient>.Instance.GetAllCategory(_connectionString);
+                return new Response<List<Category>>() { data = data };
+            }
+            catch (Exception ex)
+            {
+                //Remind handling exeptions
+                return new Response<List<Category>>() { data = new List<Category>(), message = ex.Message, code = 500 };
             }
         }
 
-        public ResponseModel<int> Put(Category newCat, string procName, string connectionString)
+        public Response<Category> SaveCategory([FromBody] Category model, bool isEdit = false)
         {
-            ResponseModel<int> res = new ResponseModel<int>();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(procName, conn);
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Id", newCat.Id);
-
-                    cmd.Parameters.AddWithValue("@Name", newCat.Name);
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    res.message = "Update Successfully";
-                    res.code = 200;
-
-                    reader.Close();
-                }
-                catch (Exception ex)
-                {
-                    res.message = ex.Message;
-                    res.code = 500;
-                    if (ex is SqlException sqlException)
-                    {
-                        //sqlException.InnerException.InnerException is U
-                    }
-                    throw;
-                }
-
-
-                return res;
+                Category data = DbClientFactory<CategoryDbClient>.Instance.SaveCategory(model, _connectionString, isEdit);
+                return new Response<Category>() { data = data, message = isEdit ? "Edit Successfully" : "Add Successfully" };
             }
-        }
+            catch (Exception ex)
+            {
+                //Remind handling exeptions
+                return new Response<Category>() { message = ex.Message, code = 500 };
 
-        public ResponseModel<int> Delete(int Id, string procName, string connectionString)
+            }
+
+        }
+        public Response<int> DeleteCategory([FromBody] int Id)
         {
-            ResponseModel<int> res = new ResponseModel<int>();
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand("DELETE FROM Categoris WHERE Id=@Id", conn);
-                    cmd.Parameters.AddWithValue("@Id", Id);
-                    int count= cmd.ExecuteNonQuery();
-                    if (count > 0) 
-                    {
-                        res.message = "Delete Successfully";
-                        res.code = 200;
-                    }
-                    else
-                    {
-                        res.message = "Not Found";
-                        res.code = 404;
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    res.message = ex.Message;
-                    res.code = 500;
-                }
+                DbClientFactory<CategoryDbClient>.Instance.DeleteCategory(Id, _connectionString);
+                return new Response<int>() { data = Id, message = "Delete Successfully" };
+            }
+            catch (Exception ex)
+            {
+                //Remind handling exeptions
+                return new Response<int>() { message = ex.Message, code = 500 };
 
             }
 
-
-            //ResponseModel<int> res = new ResponseModel<int>();
-
-            //using (SqlConnection conn = new SqlConnection(connectionString))
-            //{
-            //    try
-            //    {
-            //        conn.Open();
-            //        SqlCommand cmd = new SqlCommand(procName, conn);
-            //        cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            //        cmd.Parameters.AddWithValue("@Id",Id);
-
-            //        SqlDataReader reader = cmd.ExecuteReader();
-            //        res.message = "Delete Successfully";
-            //        res.code = 200;
-
-            //        reader.Close();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        res.message = "Server Error";
-            //        res.code = 500;
-            //        if (ex is SqlException sqlException)
-            //        {
-            //            //sqlException.InnerException.InnerException is U
-            //        }
-            //        throw;
-            //    }
-
-
-                return res;
-            }
         }
+    }
 
     
 }

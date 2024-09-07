@@ -4,8 +4,8 @@ using MealsApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetSection("ConnectionStrings")["MealsApi_Db"].ToString();
 
-Main main = new Main(connectionString);
 MealController mealController = new MealController(connectionString);
+CategoryController categoryController = new CategoryController(connectionString);
 
 
 
@@ -17,14 +17,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.MapGet("/api/GetAllCategories", () => main.GetAllCategories());
-app.MapPost("/api/InsertCategory", (Category cat) => main.PostCategory(cat));
-app.MapPut("/api/UpdateCategory", (Category cat) => main.PutCategory(cat));
-app.MapDelete("/api/DeleteCategory", (int Id) => main.DeleteCategory(Id));
+
+app.MapGet("/api/GetAllCategories", () => categoryController.GetAllCategoriess());
+app.MapPost("/api/PostCategory", (Category category) => categoryController.SaveCategory(category));
+app.MapPut("/api/PutCategory", (Category category) => categoryController.SaveCategory(category,true));
+app.MapDelete("/api/DeleteCategory", (int Id) => categoryController.DeleteCategory(Id));
 
 
 app.MapGet("/api/GetAllMeals", () => mealController.GetAllMeals());
 app.MapPost("/api/PostMeal", (Meal meal) => mealController.SaveMeal(meal));
+app.MapPut("/api/PutMeal", (Meal meal) => mealController.SaveMeal(meal,true));
+app.MapDelete("/api/DeleteMeal", (int Id) => mealController.DeleteMeal(Id));
 
 //app.MapPost("/api/PostMeal", () => mealController.SaveMeal());
 

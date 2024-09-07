@@ -16,74 +16,51 @@ namespace MealsApi.Controllers
         {
             _connectionString = connectionString;
         }
-        //[HttpGet]
-        //[Route("GetAllMealsss")]
+
         public Response<List<MealVM>> GetAllMeals()
         {
             try
             {
                 List<MealVM> data = DbClientFactory<MealDbClient>.Instance.GetAllMeals(_connectionString);
                 return new Response<List<MealVM>>() { data = data };
-                //Remind handling exeptions
             }
             catch (Exception ex)
             {
+                //Remind handling exeptions
                 return new Response<List<MealVM>>() { data = new List<MealVM>(),message=ex.Message,code=500 };
             }
         }
 
-        public IActionResult SaveMeal([FromBody] Meal model)
+        public Response<MealVM> SaveMeal([FromBody] Meal model , bool isEdit=false)
         {
-            var msg = new Response<Meal>();
-            var data = DbClientFactory<MealDbClient>.Instance.SaveMeal(model, _connectionString);
-            
-           
-            return Ok(msg);
-        }
-
-
-
-
-        public ResponseModel<int> Post(Category newCat, string procName, string connectionString)
-        {
-            ResponseModel<int> res = new ResponseModel<int>();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-
-                    var a = typeof(Category).GetProperties().Count();
-                    var b = typeof(Category).GetProperties();
-
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(procName, conn);
-
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    //cmd.Parameters.AddWithValue("@Id", newCat.Id);
-                    cmd.Parameters.AddWithValue("@Name", newCat.Name);
-
-                    //SqlDataReader reader = cmd.ExecuteReader();
-                    var aaa = cmd.ExecuteScalar();
-
-                    res.message = "Add Successfully";
-                    res.code = 200;
-
-                    //reader.Close();
-                }
-                catch (Exception ex)
-                {
-                    res.message = ex.Message;
-                    res.code = 500;
-                    if (ex is SqlException sqlException)
-                    {
-                        //sqlException.InnerException.InnerException is U
-                    }
-                    throw;
-                }
-
-
-                return res;
+                MealVM data = DbClientFactory<MealDbClient>.Instance.SaveMeal(model, _connectionString, isEdit);
+                return new Response<MealVM>() { data=data,message= isEdit ?"Edit Successfully": "Add Successfully" };
             }
+            catch (Exception ex)
+            {
+                //Remind handling exeptions
+                return new Response<MealVM>() {  message = ex.Message,code=500 };
+
+            }
+
         }
+        public Response<int> DeleteMeal([FromBody] int Id)
+        {
+            try
+            {
+                DbClientFactory<MealDbClient>.Instance.DeleteMeal(Id, _connectionString);
+                return new Response<int>() { data=Id,message="Delete Successfully" };
+            }
+            catch (Exception ex)
+            {
+                //Remind handling exeptions
+                return new Response<int>() {  message = ex.Message,code=500 };
+
+            }
+
+        }
+
     }
 }
